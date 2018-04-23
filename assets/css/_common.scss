@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+
+@import "variables";
+
+@font-face {
+    font-family: "cocoGothic-bold";
+    src:  url("../font/cocoGothic-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "cocoGothic-light";
+    src:  url("../font/cocoGothic-Light.ttf") format("truetype");
+}
+
+body{
+    position: relative;
+    z-index: 0;
+    overflow-x: hidden;
+
+    h1{
+        font-family: $brand-font;
+        font-size: 55px;
+        line-height: 1.1em;
+        letter-spacing: 4px;
+    
+        @media#{$medium}{
+            font-size: 3.1em;
+            line-height: 1.2em;
+            letter-spacing: 3px;
+        }
+    
+        @media#{$phone-landscape}{
+            font-size: 2.25em;
+            line-height: 1.1em;
+            letter-spacing: 2px;
+        }
+    
+        @media#{$phone-portrait}{
+            font-size: 1.7em;
+            line-height: 1.2em;
+            letter-spacing: 2px;
+        }
+    }
+    
+    h2{
+        font-family: $general-font;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 1px;
+        max-width: 700px;
+        margin: 15px auto 0;
+    
+        @media#{$medium}{
+            font-size: 1.2em;
+            line-height: 1.3em;
+            letter-spacing: 2px;
+        }
+    
+        @media#{$smaller}{
+            font-size: .95em;
+            line-height: 1.3em;
+            letter-spacing: 1px;
+        }
+    }
+
+    .navbar-brand{
+        color: white;
+        font-family: $brand-font;
+        font-size: 30px;
+        line-height: 49px;
+        letter-spacing: 2.2px;
+
+        @media#{$medium}{
+            font-size: 25px;
+            letter-spacing: 2px;
+            line-height: 35px;
+        }
+    }
+
+    a.navbar-brand:hover,
+    a.navbar-brand:focus{
+        color: white;
+    }
+}
+
+header{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav{
+    background-color: transparent;
+
+    ul{
+        @media#{$smaller}{
+            margin: 0 auto;
+        }
+
+        li{
+            a{
+                color: white;
+                font-family: $general-font;
+                font-size: 16px;
+                letter-spacing: 1.1px;
+                font-weight: 600;
+                margin: 0 10px;
+
+                @media#{$smaller}{
+                    font-size: 14px;
+                    margin: 0 5px;
+                    padding: 0;
+                }
+            }
+
+            a.nav-link:focus,
+            a.nav-link:hover{
+                text-decoration: none;
+                opacity: 0.75;
+                color: $white;
+                transition: .5s;
+            }
+
+            .slack-button{
+                background-size: 20px;
+                background-position: 13px 50%;
+                padding: 7px 15px 7px 40px;
+                font-size: 14px;
+                letter-spacing: 0;
+            }
+        }
+    }
+
+    @media#{$phone-portrait}{
+        .navbar-toggler{
+            span{
+                background-color: $white;
+                height: 2px;
+                margin: 4px;
+                display: block;
+            }
+        }
+
+        .navbar-toggler:focus{
+            outline: none;
+        }
+    
+        #navbarText{
+            background-color: $white;
+            padding: 10px 10px 15px;
+            text-align: center;
+    
+            a{
+                color: $black;
+                margin: 3px 0;
+            }
+        }
+    }  
+}
+
+#call-to-action{
+    h3{
+        padding: 0 15px;
+        line-height: 1.5em;
+    }
+}
+
+.content{
+    h3{
+        font-family: $brand-font-light;
+        font-size: 48px;
+        line-height: 1.3em;
+        letter-spacing: 4px;
+        margin-bottom: 17px;
+        color: $black;
+
+        @media#{$medium}{
+            font-size: 2.3em;
+            line-height: 1.3em;
+            letter-spacing: 3px;
+        }
+
+        @media#{$phone-landscape}{
+            font-size: 2em;
+            line-height: 1.2em;
+            letter-spacing: 3px;
+            margin-top: .5em;
+            text-align: left;
+        }
+    
+        @media#{$phone-portrait}{
+            font-size: 1.8em;
+            line-height: 1.2em;
+            letter-spacing: 3px;
+            margin-top: .5em;
+            text-align: left;
+        }
+    }
+    
+    p{
+        font-family: $general-font;
+        font-size: 24px;
+        line-height: 40px;
+        max-width: 450px;
+        color: $gray;
+        letter-spacing: -0.05px;
+
+        @media#{$medium}{
+            font-size: 1.1em;
+            line-height: 1.67em;
+        }
+
+        @media#{$phone-landscape}{
+            font-size: 1.2em;
+            line-height: 1.5em;
+            letter-spacing: 0px;
+            min-width: 100%;
+            text-align: left;
+        }
+    
+        @media#{$phone-portrait}{
+            font-size: 1em;
+            line-height: 1.5em;
+            letter-spacing: 0px;
+            min-width: 100%;
+            text-align: left;
+        }
+    }
+}
+
+.img-box-shadow{
+    box-shadow: 0 2px 14px 0 rgba(94, 94, 94, 0.3);
+    border-radius: 10px;
+}
+
+.button{
+    font-family: $general-font;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+    padding: 12px 60px;
+    border-radius: 30px;
+    margin-top: 30px;
+    display: inline-block;
+
+    @media#{$medium}{
+        font-size: 1em;
+        line-height: 1em;
+        padding: .7em 2.5em;
+        margin-top: 1em;
+    }
+
+    @media#{$smaller}{
+        font-size: .9em;
+        line-height: 1em;
+        padding: .6em 2em;
+        margin: 1em 0 2.5em;
+    }
+}
+
+.btn-orange{
+    color: $white;
+    background-color: $orange;
+    border: 2px solid $orange;
+}
+
+a.btn-orange:focus,
+a.btn-orange:hover{
+    color: $orange;
+    background-color: $white;
+    border: 2px solid $orange;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.btn-white{
+    color: $orange;
+    background-color: $white;
+    border: 2px solid $white;
+}
+
+a.btn-white:focus,
+a.btn-white:hover{
+    color: $white;
+    background-color: $orange;
+    border: 2px solid $white;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.show-lg{
+    @media#{$medium}{
+        display: none;
+    }
+
+    @media#{$smaller}{
+        display: none;
+    }
+}
+
+.show-md{
+    @media#{$bigger}{
+        display: none;
+    }
+
+    @media#{$medium-xs}{
+        display: none;
+    }
+
+    @media#{$smaller}{
+        display: none;
+    }
+}
+
+.show-sm{
+    @media#{$bigger}{
+        display: none;
+    }
+
+    @media#{$medium-lg}{
+        display: none;
+    }
+
+    @media#{$smaller}{
+        display: none;
+    }
+}
+
+.show-xs{
+    @media#{$bigger}{
+        display: none;
+    }
+
+    @media#{$medium}{
+        display: none;
+    }
+}
+
+.hidden-xs{
+    @media#{$smaller}{
+        display: none;
+    }
+}
+
+.color-orange{
+    color: $orange;
+}
+
+.color-black{
+    color: $black !important;
+}
+
+.color-white{
+    color: $white;
+}
+
+.color-orange:hover,
+.color-orange:focus{
+    color: $yellow;
+}

@@ -1,0 +1,27 @@
+// FONT
+
+$general-font: 'Open Sans', sans-serif;
+$brand-font: 'cocoGothic-bold';
+$brand-font-light: 'cocoGothic-light';
+
+// COLOR
+
+$black: #282828;
+$gray: #595959;
+$white: #ffffff;
+$orange: #fca62f;
+$yellow: #fdba2e;
+$gray-input: #767676;
+
+// Breakpoints
+
+$bigger: "(min-width: 1500px)";
+$medium: "(min-width:  768px) and (max-width: 1499px)";
+$smaller: "(max-width: 767px)";
+
+$medium-lg: "(min-width:  1000px) and (max-width: 1499px)";
+$medium-xs: "(min-width:  768px) and (max-width: 999px)";
+
+
+$phone-portrait: "(min-width: 0px) and (max-width: 500px)";
+$phone-landscape: "(min-width: 501px) and (max-width: 767px)";
