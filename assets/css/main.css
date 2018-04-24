@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 @font-face {
   font-family: "cocoGothic-bold";
-  src: url("../font/cocoGothic-Bold.ttf") format("truetype"); }
+  src: url("../font/CocoGothic-Bold_trial.ttf") format("truetype"); }
 @font-face {
   font-family: "cocoGothic-light";
-  src: url("../font/cocoGothic-Light.ttf") format("truetype"); }
+  src: url("../font/CocoGothic-Light_trial.ttf") format("truetype"); }
 body {
   position: relative;
   z-index: 0;
@@ -436,10 +436,13 @@ div.separator-pencil img.pencil {
     top: 48%;
     max-width: 10em;
   } }
-@media (max-width: 768px){
+@media (max-width: 765px){
   div.separator-pencil img.pencil {
-    top: 52%;
+    top: 53%;
     max-width: 6em;
+  }
+  .package {
+    min-width: 200px;
   }
 }
 .inverted {
@@ -635,10 +638,6 @@ li.li-red:before {
   .search-bar {
     padding: 0px;
   }
-  .package {
-    max-width: 200px;
-    min-height: 200px;
-  }
 }
 /* padding left and right is for search and reset icons */
 .slinput input {
@@ -666,10 +665,9 @@ li.li-red:before {
   position:relative;
   width:100%;
 }
-
-#most-popular {
-  margin-top: -30px;
-  min-height: 400px;
+@media (min-width: 768px){
+  #most-popular {
+    margin-top: -30px;
+    min-height: 400px;
+  }
 }
-
-.saturate {-webkit-filter: saturate(3);}
