@@ -356,14 +356,17 @@ section#inside-clouds {
   background-color: #F8F8F8;
   padding: 50px 0; }
 
+h3.title-brand {
+  padding-bottom: 40px;
+}
 section#logopile {
-  padding: 30px 0 80px; }
+  padding: 40px; }
   section#logopile .logos {
     max-width: 930px;
     margin: 0 auto; }
     section#logopile .logos img {
       max-height: 30px;
-      margin: 25px; }
+      margin: 30px; }
 
 footer {
   height: 300px;
@@ -676,36 +679,29 @@ li.li-red:before {
   padding: 20px 120px;
   background-color: #f2f2f2;
 }
+.slinput {
+  position:relative;
+  width:100%;
+}
+.slinput input {
+  padding:10px;
+  width:100%;
+  border:none;
+  padding-right:30px;
+  color:gray;
+  font-family: "cocoGothic-light";
+  font-size: 24px;
+  background-color: inherit;
+}
 @media (max-width: 768px){
   .search-bar {
     padding: 0px;
   }
 }
-/* padding left and right is for search and reset icons */
-.slinput input {
-  padding:10px;
-  width:100%;
-  border:none;
-  padding-left:60px;
-  padding-right:30px;
-  color:black;
-  font-family: arial,sans-serif;
-  font-size: 24px;
-  background-color: inherit;
-}
-/* left side icon style (search icon) */
-.slinput .left-icon {
-  position:absolute;
-  left:10px;
-  top:11px;
-}
-.slinput .fa {
-  color:#444;
-  font-size: 30px;
-}
-.slinput {
-  position:relative;
-  width:100%;
+@media (min-width: 1500px){
+  .slinput input {
+    font-size: 32px;
+  }
 }
 @media (min-width: 768px){
   #most-popular {
@@ -722,4 +718,7 @@ li.li-red:before {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: #c5c5c5;
+}
+#brojevi {
+  font-family: Arial;
 }
