@@ -658,6 +658,10 @@ li.li-red:before {
 .btn-orange {
   background-color: #f3a533;
 }
+#package-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 .package {
   max-width: 120px;
   min-height: 120px;
@@ -711,7 +715,7 @@ li.li-red:before {
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
