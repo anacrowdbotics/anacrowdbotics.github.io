@@ -299,10 +299,6 @@ a.btn-white:hover {
 .bg-color-purple {
   background-color: #673ec9;
 }
-.bg-hero {
-    height: 506px;
-    background-image: linear-gradient(to bottom, #f58120, #fca626);
-}
 section#hero-home .hero-content {
   color: white;
   margin: 0 auto;
@@ -343,7 +339,7 @@ section#hero-home .hero-image {
   background-position: 100% 0; }
 
 section#hero-pricing {
-    min-height: 50vh;
+    /* min-height: 50vh; */
     padding-top: 130px; }
 
 section#build-draw {
@@ -448,16 +444,16 @@ div.separator-pencil img.pencil {
 }
 @media (max-width: 1499px) and (min-width: 768px){
   div.separator-pencil img.pencil {
-    top: 48%;
+    top: 45%;
     max-width: 10em;
   } }
-@media (max-width: 765px){
+@media (max-width: 768px){
   div.separator-pencil img.pencil {
-    top: 53%;
+    top: 46%;
     max-width: 6em;
   }
-  .package {
-    min-width: 200px;
+  .separator {
+    min-height: 120px;
   }
 }
 .inverted {
@@ -489,6 +485,16 @@ div.separator-pencil img.pencil {
     max-width: 520px; }
 
 /*# sourceMappingURL=main.css.map */
+
+.bg-hero {
+    background-image: linear-gradient(to bottom, #f58120, #fca626);
+}
+@media (min-width: 1400px)  {
+  .bg-hero {
+    height: 450px;
+    background-image: linear-gradient(to bottom, #f58120, #fca626);
+  }
+}
 section.bg-hero .circles svg {
     stroke-width: 4;
     z-index: 2;
@@ -521,7 +527,7 @@ section.bg-hero .circles .circle-position-2 {
 }
 section.bg-hero .circles .circle-position-3 {
     right: 5%;
-    top: 12%;
+    top: 8%;
 }
 section.bg-hero .circles .circle-position-4 {
     left: 5%;
@@ -606,6 +612,29 @@ section.bg-hero .circles .circle-position-10 {
 .card-orange .card-header:first-child {
   border-radius: 0px;
 }
+@media (min-width: 768px){
+  #most-popular {
+    margin-top: -30px;
+    min-height: 400px;
+  }
+}
+@media (min-width: 400px) and (max-width: 768px) {
+  .card-header:first-child {
+      min-height: 4.5em;
+  }
+  .card-red {
+    max-height: 480px;
+  }
+  .card-orange {
+    max-height: 480px;
+  }
+  .card-deck {
+    margin-top: 30px;
+  }
+  #most-popular {
+    margin-top: -60px;
+  }
+}
 sup.dollar {
     vertical-align: super;
     font-size: .3em;
@@ -671,6 +700,11 @@ li.li-red:before {
   border-radius: 20px;
   margin: 20px;
 }
+@media (max-width: 765px){
+  .package {
+    min-width: 100px;
+  }
+}
 .scrollClass {
   height:450px;
   overflow-y: scroll;
@@ -701,12 +735,6 @@ li.li-red:before {
 @media (min-width: 1500px){
   .slinput input {
     font-size: 32px;
-  }
-}
-@media (min-width: 768px){
-  #most-popular {
-    margin-top: -30px;
-    min-height: 400px;
   }
 }
 
