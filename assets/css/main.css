@@ -384,15 +384,23 @@ div.separator-pencil img.pencil {
     max-width: 320px;
     right: 5%;
 }
-@media (max-width: 1499px) and (min-width: 768px){
+@media (min-width: 768px) and (max-width: 1499px){
   div.separator-pencil img.pencil {
     top: 45%;
     max-width: 10em;
+  }
+  div.separator-about img.pencil {
+    top: 26%;
+    max-width: 20em;
   } }
 @media (max-width: 768px){
   div.separator-pencil img.pencil {
     top: 46%;
     max-width: 6em;
+  }
+  div.separator-about img.pencil {
+    top: 25%;
+    max-width: 10em;
   }
   .separator {
     min-height: 120px;
@@ -767,6 +775,34 @@ footer {
     margin: 0 auto;
     margin-left: 40%;
   } }
+
 #brojevi {
   font-family: Arial;
 }
+
+
+section#call-to-action form {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 30px; }
+    section#call-to-action form .input-group input {
+      background-color: #ECECEC;
+      color: #767676;
+      border: none;
+      border-bottom-left-radius: 30px;
+      border-top-left-radius: 30px;
+      padding-left: 1.5em;
+      font-size: 20px;}
+    section#call-to-action form .input-group input:hover,
+    section#call-to-action form .input-group input:focus {
+      outline: none; }
+    section#call-to-action form .input-group .input-group-append button {
+      background-color: #fca62f;
+      color: #ffffff;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      border-bottom-right-radius: 30px;
+      border-top-right-radius: 30px;
+      border-left: 2px solid #ffffff;
+      padding-left: 1em;
+      padding-right: 1em; }
