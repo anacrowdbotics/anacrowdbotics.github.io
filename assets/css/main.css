@@ -364,64 +364,6 @@ section#logopile {
       max-height: 30px;
       margin: 30px; }
 
-footer {
-  height: 300px;
-  margin-top: 50px;
-  position: relative; }
-  footer .footer-yellow {
-    background-image: url(../images/web/footer-yellow.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-    height: 300px;
-    width: 100%;
-    position: absolute;
-    z-index: -1; }
-  footer .footer-orange {
-    background-image: url(../images/web/footer-orange.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-    height: 300px;
-    width: 100%;
-    position: absolute;
-    z-index: 0; }
-  footer .container {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%); }
-    footer .container ul {
-      padding: 0; }
-      footer .container ul li {
-        list-style: none;
-        display: inline-block; }
-        footer .container ul li a {
-          color: #ffffff; }
-    footer .container img {
-      max-height: 20px;
-      margin-left: 5px; }
-
-@media (min-width: 1500px) {
-  footer .footer-yellow {
-    height: 400px;
-  }
-  footer .footer-orange {
-    height: 400px;
-  }
-  .separator {
-    height: 300px;
-  }
-}
-@media (max-width: 800px) {
-  footer .footer-yellow {
-    height: 200px;
-  }
-  footer .footer-orange {
-    height: 200px;
-  }
-}
 .separator {
   background-image: url(../images/web/separator.png);
   background-size: 100%;
@@ -497,7 +439,7 @@ div.separator-pencil img.pencil {
 }
 section.bg-hero .circles svg {
     stroke-width: 4;
-    z-index: 2;
+    z-index: 0;
     position: absolute;
     fill: transparent;
 }
@@ -618,7 +560,7 @@ section.bg-hero .circles .circle-position-10 {
     min-height: 400px;
   }
 }
-@media (min-width: 400px) and (max-width: 768px) {
+@media (min-width: 450px) and (max-width: 768px) {
   .card-header:first-child {
       min-height: 4.5em;
   }
@@ -747,6 +689,84 @@ li.li-red:before {
     border-radius: 10px;
     background: #c5c5c5;
 }
+
+footer {
+  height: 300px;
+  margin-top: 50px;
+  position: relative; }
+  footer .footer-yellow {
+    background-image: url(../images/web/footer-yellow.png);
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    z-index: -1; }
+  footer .footer-orange {
+    background-image: url(../images/web/footer-orange.png);
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    z-index: 0; }
+  footer nav {
+    position: absolute !important;
+    width: 100%;
+    bottom: 2em;
+    z-index: 2; }
+  footer .container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+    footer .container ul {
+      padding: 0; }
+      footer .container ul li {
+        list-style: none;
+        display: inline-block; }
+        footer .container ul li a {
+          color: #ffffff; }
+    footer .container img {
+      max-height: 20px;
+      margin-left: 5px; }
+
+@media (min-width: 1500px) {
+  footer .footer-yellow {
+    height: 400px;
+    background-size: 100%;
+  }
+  footer .footer-orange {
+    height: 400px;
+    background-size: 100%;
+  }
+  .separator {
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer-yellow {
+    height: 280px;
+  }
+  footer .footer-orange {
+    height: 300px;
+  }
+  .navbar-footer-brand{
+    margin: 0 auto;
+    margin-left: 25%;
+  }
+  .navbar-footer-item {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 999px) {
+  .navbar-footer-brand{
+    margin: 0 auto;
+    margin-left: 40%;
+  } }
 #brojevi {
   font-family: Arial;
 }
