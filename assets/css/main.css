@@ -828,3 +828,10 @@ section#call-to-action form {
     font-size: 28px;
     font-weight: 200;
   } }
+#map-cloud {
+  background-color: #f3a533;
+  background-image: url("../images/web/map.svg"), url("../images/web/clouds-big.png");
+  background-repeat: no-repeat, no-repeat;
+  height: 600px;
+  background-size: 100vw 100vh;
+}
