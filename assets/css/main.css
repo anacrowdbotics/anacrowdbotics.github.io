@@ -363,6 +363,9 @@ section#logopile {
     section#logopile .logos img {
       max-height: 30px;
       margin: 30px; }
+    section#logopile .investors img {
+      max-height: 60px;
+      margin: 20px 40px; }
 
 .separator {
   background-image: url(../images/web/separator.png);
@@ -384,14 +387,18 @@ div.separator-pencil img.pencil {
     max-width: 320px;
     right: 5%;
 }
+div.separator-about img.pencil {
+    margin-top: -15%;
+    z-index: 1;
+}
 @media (min-width: 768px) and (max-width: 1499px){
   div.separator-pencil img.pencil {
     top: 45%;
     max-width: 10em;
   }
   div.separator-about img.pencil {
-    top: 26%;
-    max-width: 20em;
+    top: 25%;
+    max-width: 15em;
   } }
 @media (max-width: 768px){
   div.separator-pencil img.pencil {
@@ -439,10 +446,17 @@ div.separator-pencil img.pencil {
 .bg-hero {
     background-image: linear-gradient(to bottom, #f58120, #fca626);
 }
-@media (min-width: 1400px)  {
+.bg-hero-about {
+    padding-top: 130px;
+  }
+@media (min-width: 1200px)  {
   .bg-hero {
     height: 450px;
-    background-image: linear-gradient(to bottom, #f58120, #fca626);
+    /* background-image: linear-gradient(to bottom, #f58120, #fca626); */
+  }
+  .bg-hero-about {
+    height: 700px;
+    font-size: 28px;
   }
 }
 section.bg-hero .circles svg {
@@ -806,3 +820,11 @@ section#call-to-action form {
       border-left: 2px solid #ffffff;
       padding-left: 1em;
       padding-right: 1em; }
+
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .hero-about-content {
+    min-width: 1124px;
+    font-family: cocoGothic-light;
+    font-size: 28px;
+    font-weight: 200;
+  } }
