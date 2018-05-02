@@ -126,7 +126,16 @@ nav {
   padding-top: 2rem;
   font-size: 1.5rem;
 }
-
+.position-relative{
+  z-index: 2;
+  position: relative;
+}
+.position-relative p {
+  font-weight: 150;
+  line-height: 1.5em;
+  margin: 2rem 10rem;
+  font:18px;
+}
 .content h3 {
   font-size: 48px;
   line-height: 1.3em;
@@ -389,12 +398,25 @@ section#logopile {
     background-color: transparent;
     background-image: url(../images/web/clouds-big.png);
     background-repeat: no-repeat;
-    margin-top: -54%;
+    margin-top: -21%;
     background-size: 100%;
     background-position: 100% 0;
 }
+div.separator-small-cloud img {
+    min-height: 60px;
+    z-index: 1;
+    text-align: right;
+}
+div.separator-small-cloud img.small-cloud-1 {
+    margin-top: -80rem;
+    margin-left: 76em;
+}
+div.separator-small-cloud img.small-cloud-2 {
+    margin-top: -50rem;
+    margin-left: 60em;
+}
 div.separator-map img.svg {
-    margin-top: -75%;
+    margin-top: -95%;
     z-index: 1;
 }
 div.separator-pencil img.pencil {
