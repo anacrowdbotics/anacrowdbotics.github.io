@@ -134,8 +134,10 @@ nav {
   font-weight: 150;
   line-height: 1.5em;
   margin: 2rem 10rem;
-  font:18px;
-}
+  font:18px;}
+  @media (max-width: 768px) {
+    .position-relative p {
+      margin: 10px;} }
 .content h3 {
   font-size: 48px;
   line-height: 1.3em;
@@ -398,25 +400,41 @@ section#logopile {
     background-color: transparent;
     background-image: url(../images/web/clouds-big.png);
     background-repeat: no-repeat;
-    margin-top: -21%;
+    margin-top: -20%;
     background-size: 100%;
-    background-position: 100% 0;
-}
+    background-position: 100% 0;}
+    @media (min-width: 1500px)  {
+      .separator-big-cloud {
+        min-height: 950px;
+        margin-top: -15%;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1499px){
+        .separator-big-cloud {
+      }
+    }
+    @media (max-width: 768px){
+        .separator-big-cloud {
+          /* min-height: 500px; */
+        margin-top: -35%;
+      }
+    }
 div.separator-small-cloud img {
     min-height: 60px;
     z-index: 1;
     text-align: right;
+    position: relative;
 }
 div.separator-small-cloud img.small-cloud-1 {
     margin-top: -80rem;
-    margin-left: 76em;
+    left: 86%;
 }
 div.separator-small-cloud img.small-cloud-2 {
     margin-top: -50rem;
-    margin-left: 60em;
+    left: 65%;
 }
 div.separator-map img.svg {
-    margin-top: -95%;
+    margin-top: -75%;
     z-index: 1;
 }
 div.separator-pencil img.pencil {
@@ -428,13 +446,13 @@ div.separator-pencil img.pencil {
 }
 div.separator-pencil-down img.pencil {
     position: absolute;
-    margin-top: -35%;
+    margin-top: -25%;
     z-index: 2;
     max-width: 262px;
     left: 5%;
 }
 div.separator-about img.pencil {
-    margin-top: -15%;
+    top: 19%;
     z-index: 1;
 }
 @media (min-width: 768px) and (max-width: 1499px){
@@ -442,21 +460,44 @@ div.separator-about img.pencil {
     top: 45%;
     max-width: 10em;
   }
+  div.separator-pencil-down img.pencil {
+    margin-top: -25%;
+    max-width: 10em;
+  }
   div.separator-about img.pencil {
-    top: 25%;
+    top: 20%;
     max-width: 15em;
-  } }
+  }
+  div.separator-map img.svg {
+    margin-top: -85%;
+    z-index: 1;
+  }
+}
 @media (max-width: 768px){
   div.separator-pencil img.pencil {
     top: 46%;
     max-width: 6em;
   }
+  div.separator-pencil-down img.pencil {
+    margin-top: -70%;
+    max-width: 6em;
+  }
   div.separator-about img.pencil {
-    top: 25%;
+    top: 23%;
     max-width: 10em;
+  }
+  div.separator-map img.svg {
+    margin-top: -200%;
+    z-index: 1;
   }
   .separator {
     min-height: 120px;
+  }
+}
+@media (max-width:500px) {
+  div.separator-pencil-down img.pencil{
+    margin-top: -175%;
+    max-width: 6em;
   }
 }
 .inverted {
@@ -495,14 +536,27 @@ div.separator-about img.pencil {
 .bg-hero-about {
     padding-top: 130px;
   }
+.hero-about-content {
+    min-width: 1124px;
+    font-family: cocoGothic-light;
+    font-size: 28px;
+    font-weight: 200;
+}
 @media (min-width: 1200px)  {
   .bg-hero {
     height: 450px;
-    /* background-image: linear-gradient(to bottom, #f58120, #fca626); */
   }
   .bg-hero-about {
     height: 700px;
     font-size: 28px;
+  }
+}
+@media (max-width: 768px){
+  .bg-hero-about {
+      min-height: 600px;
+  }
+  .hero-about-content {
+    min-width: 100%;
   }
 }
 section.bg-hero .circles svg {
@@ -824,7 +878,7 @@ footer {
   }
   .navbar-footer-brand{
     margin: 0 auto;
-    margin-left: 25%;
+    /* margin-left: 25%; */
   }
   .navbar-footer-item {
     margin: 0 auto;
@@ -872,24 +926,30 @@ section#call-to-action form {
     max-width: 90% !important;
   }
 }
-@media (min-width: 1200px) and (max-width: 1499px) {
-  .hero-about-content {
-    min-width: 1124px;
-    font-family: cocoGothic-light;
-    font-size: 28px;
-    font-weight: 200;
-  } }
+
 #map-cloud {
   background-color: #f3a533;
-  height: 750px;
+  height: 470px;
   /* background-size: 100vw 100vh; */
 }
 .map-svg {
   max-width: 70%;
-    align-content: center;
-    margin: 0 auto;
-  /* background-color: #fdba2e; */
+  align-content: center;
+  margin: 0 auto;
   z-index: 1;
 }
-img.svg path { fill: red;
-max-height: 50%;}
+@media (min-width: 1500px)  {
+  #map-cloud {
+    height: 950px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1500px){
+    #map-cloud {
+    height: 750px;
+  }
+}
+@media (min-width: 501px) and (max-width: 768px){
+    #map-cloud {
+    height: 440px;
+  }
+}
