@@ -820,16 +820,15 @@ footer {
     background-image: url(../images/web/footer-bg-yellow.png);
     /* background-size: 100%; */
     background-repeat: no-repeat;
-    background-position: 100% 100%;
+    /* background-position: 100% 100%; */
     height: 300px;
     width: 100%;
     position: absolute;
     z-index: -1; }
   footer .footer-orange {
     background-image: url(../images/web/footer-bg-orange.png);
-    /* background-size: 100%; */
     background-repeat: no-repeat;
-    background-position: 100% 100%;
+    /* background-position: 100% 100%; */
     height: 300px;
     width: 100%;
     position: absolute;
@@ -858,11 +857,9 @@ footer {
 
 @media (min-width: 1500px) {
   footer .footer-yellow {
-    height: 400px;
     background-size: 100%;
   }
   footer .footer-orange {
-    height: 400px;
     background-size: 100%;
   }
   .separator {
@@ -884,6 +881,13 @@ footer {
     margin: 0 auto;
   }
 }
+@media (min-width: 770px) and (max-width: 1499px) {
+  footer .footer-yellow {
+    background-size: 100%;
+  }
+  footer .footer-orange {
+    background-size: 100%;
+  } }
 @media (min-width: 768px) and (max-width: 999px) {
   .navbar-footer-brand{
     margin: 0 auto;
