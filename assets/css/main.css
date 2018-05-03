@@ -462,7 +462,7 @@ div.separator-about img.pencil {
   }
   div.separator-pencil-down img.pencil {
     margin-top: -25%;
-    max-width: 10em;
+    max-width: 15em;
   }
   div.separator-about img.pencil {
     top: 20%;
@@ -817,7 +817,7 @@ footer {
   margin-top: 50px;
   position: relative; }
   footer .footer-yellow {
-    background-image: url(../images/web/footer-yellow.png);
+    background-image: url(../images/web/footer-bg-yellow.png);
     /* background-size: 100%; */
     background-repeat: no-repeat;
     background-position: 100% 100%;
@@ -826,7 +826,7 @@ footer {
     position: absolute;
     z-index: -1; }
   footer .footer-orange {
-    background-image: url(../images/web/footer-orange.png);
+    background-image: url(../images/web/footer-bg-orange.png);
     /* background-size: 100%; */
     background-repeat: no-repeat;
     background-position: 100% 100%;
