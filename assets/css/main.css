@@ -17,7 +17,7 @@ body {
     letter-spacing: 4px; }
     @media (min-width: 768px) and (max-width: 1499px) {
       body h1 {
-        font-size: 3.1em;
+        font-size: 2.5em;
         line-height: 1.2em;
         letter-spacing: 3px; } }
     @media (min-width: 501px) and (max-width: 767px) {
@@ -74,11 +74,13 @@ header {
 nav {
   background-color: transparent; }
   nav.navbar {
-    margin: 10px;
-  }
+    margin: 10px; }
   @media (max-width: 767px) {
     nav ul {
       margin: 0 auto; } }
+  @media (max-width: 360px) {
+    nav.navbar {
+      margin: 0 auto; }}
   nav ul li a {
     color: white;
     font-family: "Open Sans", sans-serif;
@@ -91,6 +93,9 @@ nav {
         font-size: 14px;
         margin: 0 5px;
         padding: 0; } }
+  header nav.navbar .nav-link {
+    padding-right: 29px !important;
+    padding-left: 29px !important;} }
   nav ul li a.nav-link:focus,
   nav ul li a.nav-link:hover {
     text-decoration: none;
@@ -360,7 +365,6 @@ section#hero-home .hero-image {
 
 section#hero-about {
     padding-top: 130px; }
-
     section#hero-about .hero-content {
         font-family: cocoGothic-light;}
         section#hero-about .hero-content h1 {
@@ -389,7 +393,8 @@ section#hero-about {
       section#hero-about {
           min-height: 1100px; }
       section#hero-about .hero-content p {
-          font-size: 24px; }}
+          font-size: 24px;
+          text-align: center!important;}}
 
 section#hero-pricing {
     /* min-height: 50vh; */
@@ -444,10 +449,65 @@ section#package-container {
 }
 
 section#team {
-  padding-bottom: 40px;}
-  section#team h3 {
-    padding-bottom: 20px;
-  }
+/* padding-bottom: 40px; */}
+    section#team h3 {
+      padding-bottom: 20px;}
+    section#team .row {
+      margin-bottom: 40px;}
+    @media (max-width: 768px) {
+      section#team img {
+        max-width: 90px;
+        margin-left: 15px; } }
+    section#team div.circles svg {
+        stroke-width: 4;
+        z-index: 0;
+        position: absolute;
+        fill: transparent;  }
+        section#team div.circles svg.circle-position-about-1 {
+            left: 5%;
+            top: 30%; }
+        section#team div.circles svg.circle-position-about-2 {
+            left: 38%;
+            top: 31%; }
+        section#team div.circles svg.circle-position-about-3 {
+            left: 66%;
+            top: 30%; }
+        section#team div.circles svg.circle-position-about-4 {
+            left: 90%;
+            top: 33%; }
+        section#team div.circles svg.circle-position-about-5 {
+            left: 7%;
+            top: 43%; }
+        section#team div.circles svg.circle-position-about-6 {
+            left: 35%;
+            top: 42%; }
+        section#team div.circles svg.circle-position-about-7 {
+            left: 71%;
+            top: 43%; }
+        section#team div.circles svg.circle-position-about-8 {
+            left: 92%;
+            top: 50%; }
+        section#team div.circles svg.circle-position-about-9 {
+            left: 3%;
+            top: 55%; }
+        section#team div.circles svg.circle-position-about-10 {
+            left: 42%;
+            top: 51%; }
+        section#team div.circles svg.circle-position-about-11 {
+            left: 2%;
+            top: 66%; }
+        section#team div.circles svg.circle-position-about-12 {
+            left: 22%;
+            top: 61%; }
+        section#team div.circles svg.circle-position-about-13 {
+            left: 41%;
+            top: 66%; }
+        section#team div.circles svg.circle-position-about-14 {
+            left: 88%;
+            top: 65%; }
+        section#team div.circles svg.circle-position-about-15 {
+            left: 80%;
+            top: 61%; }
 
 section#build-draw {
   padding: 80px 0; }
@@ -475,7 +535,8 @@ section#logopile-investors {
   padding: 10px;}
   section#logopile-investors img {
       max-height: 60px;
-      margin: 20px 40px; }
+      margin: 20px 40px;
+      opacity: 0.5;}
   section#logopile-investors .investors h3 {
       padding: 0px;  }
   @media (max-width: 768px){
@@ -504,7 +565,7 @@ section#logopile-investors {
     /* @media (min-width: 1500px)  {
       .separator-about {
         margin-top: -15%;}} */
-    @media (min-width: 768px) and (max-width: 1499px){
+    @media (min-width: 768px) and (max-width: 1024px){
         .separator-about {
            margin-top: -12%;}}
     @media (max-width: 768px){
@@ -547,16 +608,12 @@ div.separator-small-cloud img {
         margin-top: -50rem;
         left: 65%; }
 
-div.separator-map img.svg {
-    margin-top: -75%;
-    z-index: 1; }
-
 div.separator-pencil img.pencil {
     position: absolute;
     margin-top: -10%;
     z-index: 2;
     max-width: 320px;
-    right: 5%; }
+    right: 10.5%; }
 
 div.separator-pencil-down img.pencil {
     position: absolute;
@@ -566,40 +623,36 @@ div.separator-pencil-down img.pencil {
     left: 5%; }
 
 div.about img.pencil {
-    top: 23%;
-    z-index: 1; }
+    top: 30%;
+    z-index: 1;
+    right: 20%;}
 
 @media (min-width: 768px) and (max-width: 1499px){
   div.separator-pencil img.pencil {
     top: 45%;
     max-width: 10em; }
   div.about img.pencil {
-    top: 25%;
-    max-width: 15em; }
+    top: 29%;
+    max-width: 15em;
+    right: 10.5%;}
   div.separator-pencil-down img.pencil {
     margin-top: -25%;
-    max-width: 15em; }
-  div.separator-map img.svg {
-    margin-top: -85%;
-    z-index: 1; } }
+    max-width: 15em; } }
 @media (min-width:360px) and (max-width: 767px){
   div.separator-pencil img.pencil {
     top: 46%;
     max-width: 6em; }
   div.about img.pencil {
-    top: 23%;
+    top: 25%;
     max-width: 10em; }
   div.separator-pencil-down img.pencil {
     margin-top: -70%;
     max-width: 6em; }
-  div.separator-map img.svg {
-    margin-top: -300%;
-    z-index: 1; }
   .separator {
     min-height: 120px; } }
 @media (min-width: 768px) and (max-width: 1000px){
   div.about img.pencil {
-    top: 25%;
+    top: 29%;
     max-width: 12em; } }
 @media (max-width:500px) {
   div.separator-pencil-down img.pencil{
@@ -607,8 +660,15 @@ div.about img.pencil {
     max-width: 6em; } }
 @media (max-width:375px) {
   div.about img.pencil {
-    top: 24%;
+    top: 23%;
     max-width: 10em; } }
+@media (max-width:320px) {
+  div.about img.pencil {
+    top: 25%;
+    max-width: 10em; }
+  section#hero-about .hero-content {
+    min-height: 1100px; }}
+
 .inverted {
   transform: rotate(180deg); }
 
@@ -639,24 +699,25 @@ div.about img.pencil {
 
 .bg-hero {
     background-image: linear-gradient(to bottom, #f58120, #fca626);}
+
+.circles svg.white {
+    stroke: white; }
+.circles svg.orange {
+    stroke: #fca62f; }
+.circles svg.circle-bigger {
+    height: 40px;
+    width: 40px; }
+.circles svg.circle-medium {
+    height: 30px;
+    width: 30px; }
+.circles svg.circle-smaller {
+    height: 20px;
+    width: 20px; }
 section.bg-hero .circles svg {
     stroke-width: 4;
     z-index: 0;
     position: absolute;
     fill: transparent; }
-    section.bg-hero .circles svg.white {
-        stroke: white; }
-    section.bg-hero .circles svg.orange {
-        stroke: #fca62f; }
-    section.bg-hero .circles svg.circle-bigger {
-        height: 40px;
-        width: 40px; }
-    section.bg-hero .circles svg.circle-medium {
-        height: 30px;
-        width: 30px; }
-    section.bg-hero .circles svg.circle-smaller {
-        height: 20px;
-        width: 20px; }
     section.bg-hero .circles .circle-position-1 {
         left: 50%;
         transform: translateX(-50%);
@@ -714,7 +775,8 @@ section#pricing {
       border-radius: 0px; }
     section#pricing .card-blue .card-body .btn-blue {
       background-color: #2387fb;
-      border: 2px solid #fca62f; }
+      /* border: 2px solid #fca62f;  */
+    }
   section#pricing .card-red {
     border-color: #ef8033 !important;
     border-width: medium !important;
@@ -794,14 +856,18 @@ sup.dollar {
 }
 section#call-to-action h3 {
   line-height: 1.5em; }
+  section#call-to-action h3.pricing {
+    margin: 30px;}
   section#call-to-action h3.about {
     padding: 20px 70px;
-    line-height: 1.5em; }
+    line-height: 1.5em;
+    margin-top: 4rem;}
     @media (min-width: 1024px) {
       #call-to-action h3.about {
         padding: 20px 10rem; }}
 
 section#call-to-action form {
+    font-family: "Open Sans", sans-serif;
     max-width: 50%;
     margin: 0 auto;
     margin-top: 30px; }
@@ -812,7 +878,8 @@ section#call-to-action form {
       border-bottom-left-radius: 30px;
       border-top-left-radius: 30px;
       padding-left: 1.5em;
-      font-size: 20px;}
+      font-size: 20px;
+    }
     section#call-to-action form .input-group input:hover,
     section#call-to-action form .input-group input:focus {
       outline: none; }
@@ -826,46 +893,6 @@ section#call-to-action form {
       border-left: 2px solid #ffffff;
       padding-left: 1em;
       padding-right: 1em; }
-
-section#map-cloud {
-  background-color: #f3a533;
-  height: 470px;
-  /* background-size: 100vw 100vh; */}
-  section#map-cloud .map-svg {
-    max-width: 70%;
-    align-content: center;
-    margin: 0 auto;
-    z-index: 1; }
-  section#map-cloud div#call-to-action-2 {
-      padding-top: 2rem;
-      font-size: 1.5rem;}
-    section#map-cloud div#call-to-action-2 h3 {
-      padding-top: 2rem;
-      font-weight: 150;
-      line-height: 1.5em;}
-  @media (min-width:768px){
-    section#map-cloud .btn-open-position {
-      font-size: 30px;
-      font-weight: 400;
-      border-radius: 38px;}
-    section#map-cloud div#call-to-action-2 h3 {
-      padding-top: 4rem;
-      font-size: 2.5rem; } }
-  @media (min-width: 1500px)  {
-    section#map-cloud {
-      height: 950px; }}
-  @media (min-width: 1024px) and (max-width: 1500px){
-      section#map-cloud {
-      height: 750px; }}
-  @media (min-width: 768px) and (max-width: 1024px){
-      section#map-cloud {
-      height: 550px; }}
-  @media (min-width: 501px) and (max-width: 768px){
-      section#map-cloud {
-      height: 440px; }}
-  @media (max-width: 501px){
-      section#map-cloud {
-      height: 440px; }}
 
 @media (max-width: 768px) {
   form#enter-mail {
@@ -925,14 +952,15 @@ footer {
         background-size: 100%; }
       .separator {
         height: 300px; } }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       footer .footer-yellow {
-        height: 280px;}
+        height: 380px;}
       footer .footer-orange {
-        height: 300px;}
+        height: 380px;}
+      footer {
+        height: 380px}
       .navbar-footer-brand{
-        margin: 0 auto;
-        /* margin-left: 25%; */}
+        margin: 0 auto; }
       .navbar-footer-item {
         margin: 0 auto; }}
     @media (min-width: 770px) and (max-width: 1400px) {
