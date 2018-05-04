@@ -74,11 +74,13 @@ header {
 nav {
   background-color: transparent; }
   nav.navbar {
-    margin: 10px;
-  }
+    margin: 10px; }
   @media (max-width: 767px) {
     nav ul {
       margin: 0 auto; } }
+  @media (max-width: 360px) {
+    nav.navbar {
+      margin: 0 auto; }}
   nav ul li a {
     color: white;
     font-family: "Open Sans", sans-serif;
@@ -93,8 +95,7 @@ nav {
         padding: 0; } }
   nav.navbar .nav-link {
     padding-right: 29px !important;
-    padding-left: 29px !important;}
-  }
+    padding-left: 29px !important;} }
   nav ul li a.nav-link:focus,
   nav ul li a.nav-link:hover {
     text-decoration: none;
@@ -364,7 +365,6 @@ section#hero-home .hero-image {
 
 section#hero-about {
     padding-top: 130px; }
-
     section#hero-about .hero-content {
         font-family: cocoGothic-light;}
         section#hero-about .hero-content h1 {
@@ -393,7 +393,8 @@ section#hero-about {
       section#hero-about {
           min-height: 1100px; }
       section#hero-about .hero-content p {
-          font-size: 24px; }}
+          font-size: 24px;
+          text-align: center!important;}}
 
 section#hero-pricing {
     /* min-height: 50vh; */
@@ -449,12 +450,61 @@ section#package-container {
 
 section#team {
 /* padding-bottom: 40px; */}
-  section#team h3 {
-    padding-bottom: 20px;
-  }
-  section#team .row {
-    margin-bottom: 40px;
-  }
+    section#team h3 {
+      padding-bottom: 20px;}
+    section#team .row {
+      margin-bottom: 40px;}
+    @media (max-width: 768px) {
+      section#team img {
+        max-width: 90px;
+        margin-left: 15px; } }
+    section#team div.circles svg {
+        stroke-width: 4;
+        z-index: 0;
+        position: absolute;
+        fill: transparent;  }
+        section#team div.circles svg.circle-position-about-1 {
+            left: 5%;
+            top: 30%; }
+        section#team div.circles svg.circle-position-about-2 {
+            left: 5%;
+            top: 30%; }
+        section#team div.circles svg.circle-position-about-3 {
+            left: 5%;
+            top: 30%; }
+        section#team div.circles svg.circle-position-about-4 {
+            left: 5%;
+            top: 30%; }
+        section#team div.circles svg.circle-position-about-5 {
+            left: 5%;
+            top: 30%; }
+        section#team div.circles svg.circle-position-about-6 {
+            left: 5%;
+            top: 30%; }
+        section#team div.circles svg.circle-position-about-7 {
+            left: 5%;
+            top: 30%; }
+        section#team div.circles svg.circle-position-about-8 {
+            left: 5%;
+            top: 30%; }
+        section#team div.circles svg.circle-position-about-9 {
+            left: 5%;
+            top: 30%; }
+        section#team div.circles svg.circle-position-about-10 {
+            left: 5%;
+            top: 30%; }
+        section#team div.circles svg.circle-position-about-11 {
+            left: 5%;
+            top: 30%; }
+        section#team div.circles svg.circle-position-about-12 {
+            left: 5%;
+            top: 30%; }
+        section#team div.circles svg.circle-position-about-13 {
+            left: 5%;
+            top: 30%; }
+        section#team div.circles svg.circle-position-about-14 {
+            left: 5%;
+            top: 30%; }
 
 section#build-draw {
   padding: 80px 0; }
@@ -607,11 +657,11 @@ div.about img.pencil {
     max-width: 6em; } }
 @media (max-width:375px) {
   div.about img.pencil {
-    top: 25%;
+    top: 23%;
     max-width: 10em; } }
 @media (max-width:320px) {
   div.about img.pencil {
-    top: 27%;
+    top: 25%;
     max-width: 10em; }
   section#hero-about .hero-content {
     min-height: 1100px; }}
@@ -646,24 +696,25 @@ div.about img.pencil {
 
 .bg-hero {
     background-image: linear-gradient(to bottom, #f58120, #fca626);}
+
+.circles svg.white {
+    stroke: white; }
+.circles svg.orange {
+    stroke: #fca62f; }
+.circles svg.circle-bigger {
+    height: 40px;
+    width: 40px; }
+.circles svg.circle-medium {
+    height: 30px;
+    width: 30px; }
+.circles svg.circle-smaller {
+    height: 20px;
+    width: 20px; }
 section.bg-hero .circles svg {
     stroke-width: 4;
     z-index: 0;
     position: absolute;
     fill: transparent; }
-    section.bg-hero .circles svg.white {
-        stroke: white; }
-    section.bg-hero .circles svg.orange {
-        stroke: #fca62f; }
-    section.bg-hero .circles svg.circle-bigger {
-        height: 40px;
-        width: 40px; }
-    section.bg-hero .circles svg.circle-medium {
-        height: 30px;
-        width: 30px; }
-    section.bg-hero .circles svg.circle-smaller {
-        height: 20px;
-        width: 20px; }
     section.bg-hero .circles .circle-position-1 {
         left: 50%;
         transform: translateX(-50%);
@@ -802,9 +853,12 @@ sup.dollar {
 }
 section#call-to-action h3 {
   line-height: 1.5em; }
+  section#call-to-action h3.pricing {
+    margin: 30px;}
   section#call-to-action h3.about {
     padding: 20px 70px;
-    line-height: 1.5em; }
+    line-height: 1.5em;
+    margin-top: 4rem;}
     @media (min-width: 1024px) {
       #call-to-action h3.about {
         padding: 20px 10rem; }}
