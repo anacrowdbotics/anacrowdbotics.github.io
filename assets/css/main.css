@@ -415,7 +415,7 @@ section#hero-pricing {
     padding-top: 130px; }
     section#hero-pricing  .title{
         max-width: 100%;}
-    @@media (min-width: 768px) {
+    @media (min-width: 768px) {
         section#hero-pricing  h1{
           font-size: 72px;
           font-family: "cocoGothic-light"; } }
