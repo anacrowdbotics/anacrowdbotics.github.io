@@ -8,19 +8,21 @@ $brand-font-light: 'cocoGothic-light';
 
 $black: #282828;
 $gray: #595959;
+$gray-paragraph: #4b4b4b;
 $white: #ffffff;
 $orange: #fca62f;
 $yellow: #fdba2e;
-$gray-input: #767676;
+$bg-input: #ececec;
+$color-input: #767676;
 
 // Breakpoints
 
-$bigger: "(min-width: 1500px)";
-$medium: "(min-width:  768px) and (max-width: 1499px)";
+$bigger: "(min-width: 1300px)";
+$medium: "(min-width:  768px) and (max-width: 1299px)";
 $smaller: "(max-width: 767px)";
 
-$medium-lg: "(min-width:  1000px) and (max-width: 1499px)";
-$medium-xs: "(min-width:  768px) and (max-width: 999px)";
+$medium-lg: "(min-width:  992px) and (max-width: 1299px)";
+$medium-xs: "(min-width:  768px) and (max-width: 991px)";
 
 
 $phone-portrait: "(min-width: 0px) and (max-width: 500px)";
