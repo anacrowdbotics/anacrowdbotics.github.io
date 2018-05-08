@@ -553,6 +553,18 @@ section#logopile {
       max-height: 30px;
       margin: 30px; }
 
+section#logopile-pricing {
+  padding: 0; }
+  section#logopile-pricing h3 {
+    padding-bottom: 30px; }
+  section#logopile-pricing .logos {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 0px;}
+    section#logopile-pricing .logos img {
+      max-height: 30px;
+      margin: 10px 30px; }
+
 section#logopile-investors {
   padding: 10px;}
   section#logopile-investors img {
@@ -956,7 +968,7 @@ footer {
   margin-top: 50px;
   position: relative; }
   footer .footer-yellow {
-    background-image: url(../images/web/footer-bg-yellow.png);
+    background-image: url(../images/footer/bg-yellow.png);
     /* background-size: 100%; */
     background-repeat: no-repeat;
     /* background-position: 100% 100%; */
@@ -965,7 +977,7 @@ footer {
     position: absolute;
     z-index: -1; }
   footer .footer-orange {
-    background-image: url(../images/web/footer-bg-orange.png);
+    background-image: url(../images/footer/bg-orange.png);
     background-repeat: no-repeat;
     height: 300px;
     width: 100%;
