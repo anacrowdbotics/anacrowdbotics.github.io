@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @font-face {
   font-family: "cocoGothic-bold";
-  src: url("../font/CocoGothic-Bold_trial.ttf") format("truetype"); }
+  src: url("../font/CocoGothic-Bold.ttf") format("truetype"); }
 @font-face {
   font-family: "cocoGothic-light";
-  src: url("../font/CocoGothic-Light_trial.ttf") format("truetype"); }
+  src: url("../font/CocoGothic-Light.ttf") format("truetype"); }
 body {
   position: relative;
   z-index: 0;
