@@ -833,7 +833,8 @@ section#pricing {
       font-size: 42px; }
   @media (max-width: 450px) {
     section#pricing .card-blue .card-body span {
-      max-width: 180px; } }
+      max-width: 180px;
+      margin: 0 auto !important;} }
   @media (min-width: 450px) and (max-width: 767px) {
       section#pricing .card-header:first-child {
         min-height: 4.5em;}
@@ -981,8 +982,37 @@ footer {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%); }
+    footer .navbar-footer-menu {
+      order: 2;
+    }
+    footer .navbar-footer-crowdbotics {
+      order: 1;
+    }
+    footer .navbar-footer-links {
+      order: 3;
+    }
+    @media(max-width: 1200px) {
+      footer .navbar-footer-menu {
+        order: 1;
+        flex: 0 1 100%;
+      }
+      footer .navbar-footer-crowdbotics {
+        order: 2;
+      }
+      footer .navbar-footer-links {
+        order: 3;
+      }
+    }
     footer .container ul {
-      padding: 0; }
+      padding: 1em 0 0 0;
+
+    }
+    @media (min-width: 767px) {
+      footer .container ul {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
       footer .container ul li {
         list-style: none;
         display: inline-block; }
@@ -1022,7 +1052,3 @@ footer {
       footer .footer-orange {
         background-size: 100%;
         background-position: 100% 100%; } }
-    @media (min-width: 770px) and (max-width: 999px) {
-      .navbar-footer-brand{
-        margin: 0 auto;
-        margin-left: 40%; } }
