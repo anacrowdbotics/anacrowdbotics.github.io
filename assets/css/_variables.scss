@@ -21,9 +21,10 @@ $bigger: "(min-width: 1300px)";
 $medium: "(min-width:  768px) and (max-width: 1299px)";
 $smaller: "(max-width: 767px)";
 
-$medium-lg: "(min-width:  992px) and (max-width: 1299px)";
+$medium-lg: "(min-width:  1100px) and (max-width: 1299px)";
+$medium-md: "(min-width:  992px) and (max-width: 1099px)";
 $medium-xs: "(min-width:  768px) and (max-width: 991px)";
 
 
-$phone-portrait: "(min-width: 0px) and (max-width: 500px)";
-$phone-landscape: "(min-width: 501px) and (max-width: 767px)";
+$phone-portrait: "(min-width: 0px) and (max-width: 600px)";
+$phone-landscape: "(min-width: 601px) and (max-width: 767px)";

@@ -19,28 +19,59 @@ body{
 
     h1{
         font-family: $brand-font;
-        font-size: 55px;
-        line-height: 1.1em;
-        letter-spacing: 4px;
+        font-size: 64px;
+        line-height: 85px;
+        letter-spacing: 3.9px;
         margin: 0;
 
         @media#{$bigger}{
             font-size: 75px;
             line-height: 105px;
-            letter-spacing: 3.9px;
+        }
+
+        @media#{$medium-md}{
+            font-size: 55px;
+            line-height: 75px;
+        }
+
+        @media#{$medium-xs}{
+            font-size: 45px;
+            line-height: 60px;
+            letter-spacing: 3.5px;
+        }
+
+        @media#{$smaller}{
+            font-size: 50px;
+            line-height: 60px;
+            letter-spacing: 3.5px;
         }
     }
-    
+
     h2{
         font-family: $brand-font-light;
-        font-size: 19px;
-        line-height: 30px;
+        font-size: 24px;
+        line-height: 32px;
         letter-spacing: 0.1px;
         margin: 0;
 
         @media#{$bigger}{
             font-size: 28px;
             line-height: 37px;
+        }
+
+        @media#{$medium-md}{
+            font-size: 22px;
+            line-height: 30px;
+        }
+
+        @media#{$medium-xs}{
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        @media#{$smaller}{
+            font-size: 20px;
+            line-height: 25px;
         }
 
         strong{
@@ -50,8 +81,8 @@ body{
 
     h3{
         font-family: $brand-font-light;
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 35px;
+        line-height: 45px;
         letter-spacing: 0.1px;
         margin: 0;
 
@@ -60,32 +91,68 @@ body{
             line-height: 50px;
         }
 
+        @media#{$medium-xs}{
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        @media#{$smaller}{
+            font-size: 26px;
+            line-height: 38px;
+        }
+
         span{
             background-color: $orange;
             display: inline-block;
-            padding: 3px 0;
+            padding: 0 3px;
         }
     }
 
     h4{
         font-family: $general-font;
         letter-spacing: 0.4px;
-        margin-top: 24px;
+        margin-top: 10px;
         margin-bottom: 8px;
+        font-size: 20px;
+        line-height: 28px;
 
         @media#{$bigger}{
             font-size: 24px;
             line-height: 33px;
+            margin-top: 24px;
+        }
+
+        @media#{$smaller}{
+            font-size: 18px;
+            line-height: 25px;
+            margin-top: 20px;
         }
     }
 
     p.paragraph{
         font-family: $general-font;
         letter-spacing: 0.4px;
+        font-size: 16px;
+        line-height: 20px;
 
         @media#{$bigger}{
             font-size: 18px;
             line-height: 22px;
+        }
+
+        @media#{$medium-md}{
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+        @media#{$medium-xs}{
+            font-size: 13px;
+            line-height: 16px;
+        }
+
+        @media#{$smaller}{
+            font-size: 14px;
+            line-height: 18px;
         }
     }
 
@@ -94,10 +161,17 @@ body{
         font-family: $brand-font;
         padding: 0;
         letter-spacing: 1.8px;
+        font-size: 25px;
+        line-height: 45px;
 
         @media#{$bigger}{
             font-size: 29px;
             line-height: 50px;
+        }
+
+        @media#{$smaller}{
+            font-size: 22px;
+            line-height: 45px;
         }
     }
 
@@ -140,13 +214,14 @@ nav.navbar{
                 font-size: 16px;
                 letter-spacing: 1.1px;
                 font-weight: 600;
-                margin: 0 10px;
-                line-height: 50px;
+                margin: 0 15px;
+                line-height: 45px;
                 padding: 0;
 
                 @media#{$bigger}{
                     font-size: 18px;
                     margin: 0 28px;
+                    line-height: 50px;
                 }
 
                 @media#{$smaller}{
@@ -167,6 +242,7 @@ nav.navbar{
             a.btn-nav{
                 margin-right: 0;
                 color: $black;
+                padding: 0 20px !important;
 
                 @media#{$bigger}{
                     padding: 0 30px !important;
@@ -195,18 +271,18 @@ nav.navbar{
         .navbar-toggler:focus{
             outline: none;
         }
-    
+
         #navbarText{
             background-color: $white;
             padding: 10px 10px 15px;
             text-align: center;
-    
+
             a{
                 color: $black;
                 margin: 3px 0;
             }
         }
-    }  
+    }
 }
 
 
@@ -214,32 +290,58 @@ footer{
     height: 300px;
     position: relative;
 
+    @media#{$smaller}{
+        height: 270px;
+    }
+
     .footer-yellow{
         background-image: url(../images/web/footer-yellow.png);
-        background-size: 115%;
+        background-size: auto 270px;
+        background-position: 50% 100%;
         background-repeat: no-repeat;
-        background-position: 100% 100%;
         height: 300px;
         width: 100%;
         position: absolute;
         z-index: -1;
+
+        @media#{$bigger}{
+            background-size: 120%;
+            background-position: 0% 35%;
+        }
+
+        @media#{$smaller}{
+            background-position: 50% 100%;
+            background-size: auto 240px;
+            height: 280px;
+        }
     }
 
     .footer-orange{
         background-image: url(../images/web/footer-orange.png);
-        background-size: 115%;
+        background-size: auto 270px;
+        background-position: 50% 100%;
         background-repeat: no-repeat;
-        background-position: 100% 100%;
         height: 300px;
         width: 100%;
         position: absolute;
         z-index: 0;
+
+        @media#{$bigger}{
+            background-size: 110%;
+            background-position: 100% 100%;
+        }
+
+        @media#{$smaller}{
+            background-position: 50% 100%;
+            background-size: auto 240px;
+            height: 280px;
+        }
     }
 
     .container{
         position: absolute;
         width: 100%;
-        bottom: 0;    
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
 
@@ -251,16 +353,22 @@ footer{
             font-size: 36px;
             line-height: 50px;
             margin-bottom: 20px;
+
+            @media#{$smaller}{
+                font-size: 28px;
+                line-height: 40px;
+                margin-bottom: 20px;
+            }
         }
 
         ul{
             padding: 0;
             margin: 0 0 15px;
-    
+
             li{
                 list-style: none;
                 display: inline-block;
-    
+
                 a{
                     color: $white;
                 }
@@ -272,24 +380,85 @@ footer{
 
                 a{
                     padding: 0 5px;
-                    font-size: 18px;
+                    font-size: 16px;
                     letter-spacing: 1.1px;
+
+                    @media#{$bigger}{
+                        font-size: 18px;
+                    }
+
+                    @media#{$medium-xs}{
+                        font-size: 14px;
+                        letter-spacing: 0.5px;
+                        padding: 0 2px;
+                    }
+
+                    @media#{$phone-landscape}{
+                        font-size: 13px;
+                        width: 200px;
+                        text-align: center !important;
+                        margin: 0 auto;
+                    }
+
+                    @media#{$phone-portrait}{
+                        font-size: 13px;
+                        width: 150px;
+                        text-align: center !important;
+                        margin: 0 auto;
+                    }
                 }
             }
 
             li.col-large{
                 min-width: 210px;
+
+                @media#{$medium-xs}{
+                    min-width: 146px;
+                }
+
+                @media#{$smaller}{
+                    min-width: auto;
+                }
             }
         }
-    
+
         a.icons{
             display: inline-block;
             margin-top: 13px;
             vertical-align: middle;
 
+            @media#{$smaller}{
+                margin-top: 4px;
+            }
+
             img{
                 max-height: 24px;
                 margin-left: 15px;
+
+                @media#{$smaller}{
+                    max-height: 18px;
+                    margin-left: 8px;
+                    margin-top: 0;
+                }
+
+                @media#{$phone-portrait}{
+                    margin: 8px !important;
+                }
+            }
+        }
+    }
+
+    .row{
+        div{
+            @media#{$phone-portrait}{
+                max-width: 100%;
+                min-width: 310px;
+                text-align: center !important;
+                margin: 0 auto;
+
+                a{
+                    margin: 0 !important;
+                }
             }
         }
     }
@@ -305,10 +474,17 @@ form{
             border-bottom-left-radius: 30px;
             border-top-left-radius: 30px;
             padding: 0 18px;
-            
+            font-size: 13px;
+            line-height: 40px;
+
             @media#{$bigger}{
                 font-size: 14px;
                 line-height: 47px;
+            }
+
+            @media#{$medium}{
+                font-size: 12px;
+                line-height: 35px;
             }
         }
 
@@ -329,11 +505,19 @@ form{
                 border-bottom-right-radius: 30px;
                 border-top-right-radius: 30px;
                 border-left: 2px solid $white;
+                font-size: 16px;
+                line-height: 42px;
+                padding: 0 15px;
 
                 @media#{$bigger}{
                     font-size: 20px;
                     line-height: 47px;
                     padding: 0 20px;
+                }
+
+                @media#{$medium}{
+                    font-size: 14px;
+                    line-height: 35px;
                 }
             }
         }
@@ -396,13 +580,20 @@ form{
 
 .button{
     font-family: $general-font;
-    font-size: 20px;
-    line-height: 47px;
+    font-size: 18px;
+    line-height: 40px;
     font-weight: 600;
-    padding: 0 58px;
+    padding: 0 40px;
     border-radius: 30px;
-    margin-top: 20px;
+    margin-top: 15px;
     display: inline-block;
+
+    @media#{$bigger}{
+        font-size: 20px;
+        line-height: 47px;
+        padding: 0 58px;
+        margin-top: 20px;
+    }
 }
 
 .btn-orange{
@@ -476,12 +667,40 @@ a.btn-white:hover{
     background-repeat: no-repeat;
     background-position: 100% 0;
     min-height: 200px;
+
+    @media#{$medium-xs}{
+        min-height: 140px;
+    }
+
+    @media#{$smaller}{
+        min-height: 140px;
+    }
+
+    @media#{$phone-portrait}{
+        min-height: 100px;
+    }
 }
 
 .right-side{
-    padding-top: 100px;
+    padding-top: 70px;
+
+    @media#{$bigger}{
+        padding-top: 100px;
+    }
+
+    @media#{$smaller}{
+        img{
+            margin-top: 50px !important;
+        }
+    }
 
     .content{
         margin-left: auto;
+        margin-top: 15px !important;
+
+        @media#{$smaller}{
+            margin-left: 0;
+            margin-top: 0 !important;
+        }
     }
 }
