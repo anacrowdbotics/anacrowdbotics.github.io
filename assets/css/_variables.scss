@@ -21,10 +21,12 @@ $bigger: "(min-width: 1300px)";
 $medium: "(min-width:  768px) and (max-width: 1299px)";
 $smaller: "(max-width: 767px)";
 
+$bigger-lg: "(min-width: 1550px)";
+$bigger-md: "(min-width:  1300px) and (max-width: 1549px)";
+
 $medium-lg: "(min-width:  1100px) and (max-width: 1299px)";
 $medium-md: "(min-width:  992px) and (max-width: 1099px)";
 $medium-xs: "(min-width:  768px) and (max-width: 991px)";
-
 
 $phone-portrait: "(min-width: 0px) and (max-width: 600px)";
 $phone-landscape: "(min-width: 601px) and (max-width: 767px)";

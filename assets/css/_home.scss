@@ -6,24 +6,29 @@ section#hero-home{
     background-size: 52%;
     background-position: 113% 0;
 
-    @media#{$bigger}{
-        background-size: 53%;
-        background-position: 115% 0%;
+    @media#{$bigger-lg}{
+        background-size: 800px auto;
+        background-position: 105% 0%;
+    }
+
+    @media#{$bigger-md}{
+        background-size: 730px auto;
+        background-position: 112% 0%;
     }
 
     @media#{$medium-lg}{
-        background-size: 52%;
-        background-position: 113% 0;
+        background-size: 650px auto;
+        background-position: 115% 0;    
     }
 
     @media#{$medium-md}{
-        background-size: 57%;
+        background-size: 580px auto;
         background-position: 120% 0;
     }
 
     @media#{$medium-xs}{
-        background-size: 65%;
-        background-position: 153% 0;
+        background-size: 60%;
+        background-position: 130% 0;
     }
 
     @media#{$smaller}{
@@ -35,6 +40,10 @@ section#hero-home{
         max-width: 440px;
         padding: 130px 0 100px;
 
+        @media#{$bigger-lg}{
+            padding: 160px 0 140px;
+        }
+
         @media#{$bigger}{
             padding: 160px 0 105px;
             max-width: 535px;
@@ -42,11 +51,11 @@ section#hero-home{
 
         @media#{$medium-md}{
             max-width: 400px;
-            padding: 130px 0 100px;
+            padding: 120px 0 100px;
         }
 
         @media#{$medium-xs}{
-            max-width: 350px;
+            max-width: 335px;
             padding: 130px 0 120px;
         }
 
@@ -62,7 +71,7 @@ section#hero-home{
         }
 
         img{
-            height: 80px;
+            height: 70px;
             margin-bottom: 13px;
 
             @media#{$bigger}{
@@ -70,7 +79,7 @@ section#hero-home{
             }
 
             @media#{$medium-xs}{
-                height: 65px;
+                height: 55px;
             }
         }
 
@@ -82,7 +91,7 @@ section#hero-home{
             }
 
             @media#{$medium-xs}{
-                margin: 15px 0;
+                margin: 15px 0 20px;
             }
 
             @media#{$smaller}{
@@ -159,7 +168,7 @@ section#product{
     }
 
     img{
-        height: 280px;
+        height: 290px;
 
         @media#{$bigger}{
             height: 360px;
@@ -173,7 +182,7 @@ section#product{
 
     .content{
         max-width: 480px;
-        margin-top: 30px;
+        margin-top: 35px;
 
         @media#{$bigger}{
             max-width: 510px;
@@ -189,14 +198,22 @@ section#product{
             line-height: 1.67em;
         }
     }
+
+    .content.quality{
+        @media#{$medium-md}{
+            margin-top: 55px !important;
+        }
+    }
 }
 
 div#register{
-    max-width: 1140px;
+    max-width: 900px;
     margin: 30px auto;
+    padding: 0 10px;
 
-    @media#{$medium-md}{
-        max-width: 800px;
+    @media#{$bigger}{
+        max-width: 1140px;
+        margin: 30px auto 50px;
     }
 
     @media#{$medium-xs}{
@@ -214,8 +231,71 @@ div#register{
     }
 
     form{
-        max-width: 750px;
+        width: 480px;
         margin: 0 auto;
+
+        @media#{$bigger}{
+            max-width: 750px;
+
+            button{
+                line-height: 57px;
+                padding: 0 29px 0 25px;
+            }
+
+            input{
+                font-size: 20px;
+                line-height: 57px;
+                padding-left: 24px;
+            }
+        }
+
+        @media#{$medium-lg}{
+            button{
+                font-size: 18px;
+                line-height: 50px;
+                padding: 0 29px 0 25px;
+            }
+
+            input{
+                font-size: 18px;
+                line-height: 50px;
+                padding-left: 24px;
+            }
+        }
+
+        @media#{$medium-md}{
+            button{
+                font-size: 17px;
+                line-height: 50px;
+                padding: 0 29px 0 25px;
+            }
+
+            input{
+                font-size: 17px;
+                line-height: 50px;
+                padding-left: 24px;
+            }
+        }
+
+        @media#{$phone-portrait}{
+            width: 310px;
+
+            input{
+                width: 100%;
+                border-radius: 0;
+                margin-bottom: 16px;
+            }
+
+            .input-group-append{
+                display: block;
+                width: 100%;
+            
+                button{
+                    border-radius: 30px;
+                    padding: 0 25px;
+                }
+            }
+        }
     }
 }
 
