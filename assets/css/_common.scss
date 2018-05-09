@@ -17,6 +17,16 @@ body{
     z-index: 0;
     overflow-x: hidden;
 
+    .container{
+        @media#{$bigger-lg}{
+            min-width: 1300px !important;
+        }
+
+        @media#{$medium-md}{
+            padding: 0 40px;
+        }
+    }
+
     h1{
         font-family: $brand-font;
         font-size: 64px;
@@ -37,7 +47,7 @@ body{
         @media#{$medium-xs}{
             font-size: 45px;
             line-height: 60px;
-            letter-spacing: 3.5px;
+            letter-spacing: 3.2px;
         }
 
         @media#{$smaller}{
@@ -65,12 +75,12 @@ body{
         }
 
         @media#{$medium-xs}{
-            font-size: 20px;
+            font-size: 19px;
             line-height: 25px;
         }
 
         @media#{$smaller}{
-            font-size: 20px;
+            font-size: 19px;
             line-height: 25px;
         }
 
@@ -196,6 +206,11 @@ nav.navbar{
     padding-top: 20px;
 
     .container{
+
+        @media#{$bigger-lg}{
+            max-width: 1450px !important;
+        }
+
         @media#{$bigger}{
             max-width: 1300px;
             padding: 0;
@@ -290,12 +305,16 @@ footer{
     height: 300px;
     position: relative;
 
+    @media#{$medium-xs}{
+        height: 230px;
+    }
+
     @media#{$smaller}{
         height: 270px;
     }
 
     .footer-yellow{
-        background-image: url(../images/web/footer-yellow.png);
+        background-image: url(../images/footer/bg-yellow.png);
         background-size: auto 270px;
         background-position: 50% 100%;
         background-repeat: no-repeat;
@@ -305,19 +324,23 @@ footer{
         z-index: -1;
 
         @media#{$bigger}{
-            background-size: 120%;
+            background-size: 100% 280px;
             background-position: 0% 35%;
         }
 
+        @media#{$medium-xs}{
+            background-size: auto 200px;
+            height: 230px;
+        }
+
         @media#{$smaller}{
-            background-position: 50% 100%;
             background-size: auto 240px;
             height: 280px;
         }
     }
 
     .footer-orange{
-        background-image: url(../images/web/footer-orange.png);
+        background-image: url(../images/footer/bg-orange.png);
         background-size: auto 270px;
         background-position: 50% 100%;
         background-repeat: no-repeat;
@@ -327,12 +350,17 @@ footer{
         z-index: 0;
 
         @media#{$bigger}{
-            background-size: 110%;
+            background-size: 100% 280px;
             background-position: 100% 100%;
         }
 
+        @media#{$medium-xs}{
+            background-size: auto 200px;
+            height: 230px;
+        }
+
         @media#{$smaller}{
-            background-position: 50% 100%;
+            background-position: 20% 100%;
             background-size: auto 240px;
             height: 280px;
         }
@@ -357,7 +385,7 @@ footer{
             @media#{$smaller}{
                 font-size: 28px;
                 line-height: 40px;
-                margin-bottom: 20px;
+                margin-bottom: 5px;
             }
         }
 
@@ -519,6 +547,11 @@ form{
                     font-size: 14px;
                     line-height: 35px;
                 }
+
+                @media#{$medium-xs}{
+                    font-size: 14px;
+                    line-height: 30px;
+                }
             }
         }
     }
@@ -668,6 +701,11 @@ a.btn-white:hover{
     background-position: 100% 0;
     min-height: 200px;
 
+    @media#{$bigger}{
+        background-size: 100% 250px;
+        min-height: 250px;
+    }
+
     @media#{$medium-xs}{
         min-height: 140px;
     }
@@ -683,6 +721,7 @@ a.btn-white:hover{
 
 .right-side{
     padding-top: 70px;
+    margin-bottom: 20px;
 
     @media#{$bigger}{
         padding-top: 100px;

@@ -9,6 +9,12 @@ body {
   position: relative;
   z-index: 0;
   overflow-x: hidden; }
+  @media (min-width: 1550px) {
+    body .container {
+      min-width: 1300px !important; } }
+  @media (min-width: 992px) and (max-width: 1099px) {
+    body .container {
+      padding: 0 40px; } }
   body h1 {
     font-family: "cocoGothic-bold";
     font-size: 64px;
@@ -27,7 +33,7 @@ body {
       body h1 {
         font-size: 45px;
         line-height: 60px;
-        letter-spacing: 3.5px; } }
+        letter-spacing: 3.2px; } }
     @media (max-width: 767px) {
       body h1 {
         font-size: 50px;
@@ -49,11 +55,11 @@ body {
         line-height: 30px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       body h2 {
-        font-size: 20px;
+        font-size: 19px;
         line-height: 25px; } }
     @media (max-width: 767px) {
       body h2 {
-        font-size: 20px;
+        font-size: 19px;
         line-height: 25px; } }
     body h2 strong {
       font-family: "cocoGothic-bold"; }
@@ -146,6 +152,9 @@ header {
 nav.navbar {
   background-color: transparent;
   padding-top: 20px; }
+  @media (min-width: 1550px) {
+    nav.navbar .container {
+      max-width: 1450px !important; } }
   @media (min-width: 1300px) {
     nav.navbar .container {
       max-width: 1300px;
@@ -209,11 +218,14 @@ nav.navbar {
 footer {
   height: 300px;
   position: relative; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    footer {
+      height: 230px; } }
   @media (max-width: 767px) {
     footer {
       height: 270px; } }
   footer .footer-yellow {
-    background-image: url(../images/web/footer-yellow.png);
+    background-image: url(../images/footer/bg-yellow.png);
     background-size: auto 270px;
     background-position: 50% 100%;
     background-repeat: no-repeat;
@@ -223,15 +235,18 @@ footer {
     z-index: -1; }
     @media (min-width: 1300px) {
       footer .footer-yellow {
-        background-size: 120%;
+        background-size: 100% 280px;
         background-position: 0% 35%; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      footer .footer-yellow {
+        background-size: auto 200px;
+        height: 230px; } }
     @media (max-width: 767px) {
       footer .footer-yellow {
-        background-position: 50% 100%;
         background-size: auto 240px;
         height: 280px; } }
   footer .footer-orange {
-    background-image: url(../images/web/footer-orange.png);
+    background-image: url(../images/footer/bg-orange.png);
     background-size: auto 270px;
     background-position: 50% 100%;
     background-repeat: no-repeat;
@@ -241,11 +256,15 @@ footer {
     z-index: 0; }
     @media (min-width: 1300px) {
       footer .footer-orange {
-        background-size: 110%;
+        background-size: 100% 280px;
         background-position: 100% 100%; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      footer .footer-orange {
+        background-size: auto 200px;
+        height: 230px; } }
     @media (max-width: 767px) {
       footer .footer-orange {
-        background-position: 50% 100%;
+        background-position: 20% 100%;
         background-size: auto 240px;
         height: 280px; } }
   footer .container {
@@ -265,7 +284,7 @@ footer {
         footer .container .navbar-brand {
           font-size: 28px;
           line-height: 40px;
-          margin-bottom: 20px; } }
+          margin-bottom: 5px; } }
     footer .container ul {
       padding: 0;
       margin: 0 0 15px; }
@@ -380,6 +399,10 @@ form .input-group .input-group-append {
       form .input-group .input-group-append button {
         font-size: 14px;
         line-height: 35px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      form .input-group .input-group-append button {
+        font-size: 14px;
+        line-height: 30px; } }
 
 @media (min-width: 768px) and (max-width: 1299px) {
   .show-lg {
@@ -494,6 +517,10 @@ a.btn-white:hover {
   background-repeat: no-repeat;
   background-position: 100% 0;
   min-height: 200px; }
+  @media (min-width: 1300px) {
+    .separator {
+      background-size: 100% 250px;
+      min-height: 250px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .separator {
       min-height: 140px; } }
@@ -505,7 +532,8 @@ a.btn-white:hover {
       min-height: 100px; } }
 
 .right-side {
-  padding-top: 70px; }
+  padding-top: 70px;
+  margin-bottom: 20px; }
   @media (min-width: 1300px) {
     .right-side {
       padding-top: 100px; } }
@@ -525,22 +553,26 @@ section#hero-home {
   background-repeat: no-repeat;
   background-size: 52%;
   background-position: 113% 0; }
-  @media (min-width: 1300px) {
+  @media (min-width: 1550px) {
     section#hero-home {
-      background-size: 53%;
-      background-position: 115% 0%; } }
+      background-size: 800px auto;
+      background-position: 105% 0%; } }
+  @media (min-width: 1300px) and (max-width: 1549px) {
+    section#hero-home {
+      background-size: 730px auto;
+      background-position: 112% 0%; } }
   @media (min-width: 1100px) and (max-width: 1299px) {
     section#hero-home {
-      background-size: 52%;
-      background-position: 113% 0; } }
+      background-size: 650px auto;
+      background-position: 115% 0; } }
   @media (min-width: 992px) and (max-width: 1099px) {
     section#hero-home {
-      background-size: 57%;
+      background-size: 580px auto;
       background-position: 120% 0; } }
   @media (min-width: 768px) and (max-width: 991px) {
     section#hero-home {
-      background-size: 65%;
-      background-position: 153% 0; } }
+      background-size: 60%;
+      background-position: 130% 0; } }
   @media (max-width: 767px) {
     section#hero-home {
       background-image: none; } }
@@ -548,6 +580,9 @@ section#hero-home {
     color: white;
     max-width: 440px;
     padding: 130px 0 100px; }
+    @media (min-width: 1550px) {
+      section#hero-home .hero-content {
+        padding: 160px 0 140px; } }
     @media (min-width: 1300px) {
       section#hero-home .hero-content {
         padding: 160px 0 105px;
@@ -555,10 +590,10 @@ section#hero-home {
     @media (min-width: 992px) and (max-width: 1099px) {
       section#hero-home .hero-content {
         max-width: 400px;
-        padding: 130px 0 100px; } }
+        padding: 120px 0 100px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       section#hero-home .hero-content {
-        max-width: 350px;
+        max-width: 335px;
         padding: 130px 0 120px; } }
     @media (max-width: 767px) {
       section#hero-home .hero-content {
@@ -569,14 +604,14 @@ section#hero-home {
         section#hero-home .hero-content h2 {
           margin-top: 20px; } }
     section#hero-home .hero-content img {
-      height: 80px;
+      height: 70px;
       margin-bottom: 13px; }
       @media (min-width: 1300px) {
         section#hero-home .hero-content img {
           height: 94px; } }
       @media (min-width: 768px) and (max-width: 991px) {
         section#hero-home .hero-content img {
-          height: 65px; } }
+          height: 55px; } }
     section#hero-home .hero-content p {
       margin: 20px 0; }
       @media (min-width: 1300px) {
@@ -584,7 +619,7 @@ section#hero-home {
           margin: 30px 0; } }
       @media (min-width: 768px) and (max-width: 991px) {
         section#hero-home .hero-content p {
-          margin: 15px 0; } }
+          margin: 15px 0 20px; } }
       @media (max-width: 767px) {
         section#hero-home .hero-content p {
           margin: 15px 0 30px; } }
@@ -636,7 +671,7 @@ section#product {
         max-width: 500px;
         margin: 0 auto 30px; } }
   section#product img {
-    height: 280px; }
+    height: 290px; }
     @media (min-width: 1300px) {
       section#product img {
         height: 360px; } }
@@ -646,7 +681,7 @@ section#product {
         height: 220px; } }
   section#product .content {
     max-width: 480px;
-    margin-top: 30px; }
+    margin-top: 35px; }
     @media (min-width: 1300px) {
       section#product .content {
         max-width: 510px;
@@ -657,13 +692,18 @@ section#product {
         margin-top: 20px; } }
     section#product .content p {
       line-height: 1.67em; }
+  @media (min-width: 992px) and (max-width: 1099px) {
+    section#product .content.quality {
+      margin-top: 55px !important; } }
 
 div#register {
-  max-width: 1140px;
-  margin: 30px auto; }
-  @media (min-width: 992px) and (max-width: 1099px) {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 10px; }
+  @media (min-width: 1300px) {
     div#register {
-      max-width: 800px; } }
+      max-width: 1140px;
+      margin: 30px auto 50px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     div#register {
       max-width: 600px; } }
@@ -675,8 +715,49 @@ div#register {
   div#register h3 {
     margin-bottom: 50px; }
   div#register form {
-    max-width: 750px;
+    width: 480px;
     margin: 0 auto; }
+    @media (min-width: 1300px) {
+      div#register form {
+        max-width: 750px; }
+        div#register form button {
+          line-height: 57px;
+          padding: 0 29px 0 25px; }
+        div#register form input {
+          font-size: 20px;
+          line-height: 57px;
+          padding-left: 24px; } }
+    @media (min-width: 1100px) and (max-width: 1299px) {
+      div#register form button {
+        font-size: 18px;
+        line-height: 50px;
+        padding: 0 29px 0 25px; }
+      div#register form input {
+        font-size: 18px;
+        line-height: 50px;
+        padding-left: 24px; } }
+    @media (min-width: 992px) and (max-width: 1099px) {
+      div#register form button {
+        font-size: 17px;
+        line-height: 50px;
+        padding: 0 29px 0 25px; }
+      div#register form input {
+        font-size: 17px;
+        line-height: 50px;
+        padding-left: 24px; } }
+    @media (min-width: 0px) and (max-width: 600px) {
+      div#register form {
+        width: 310px; }
+        div#register form input {
+          width: 100%;
+          border-radius: 0;
+          margin-bottom: 16px; }
+        div#register form .input-group-append {
+          display: block;
+          width: 100%; }
+          div#register form .input-group-append button {
+            border-radius: 30px;
+            padding: 0 25px; } }
 
 .distance {
   margin-bottom: 40px; }
