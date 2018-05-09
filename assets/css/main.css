@@ -542,6 +542,21 @@ section#team {
             left: 80%;
             top: 61%; }
 
+section#bwc { }
+    section#bwc .figure {
+      padding: 20px;}
+    section#bwc .figure figcaption {
+      font-size: 24px;
+      color: #282828;
+      font-family: "Open Sans", sans-serif;}
+    section#bwc .figure button {
+      margin: 0 auto;
+      max-width: 228px;}
+    @media (max-width: 768px) {
+      section#bwc img {
+        max-width: 90px;
+        margin-left: 15px; } }
+
 section#build-draw {
   padding: 80px 0; }
   section#build-draw img {
