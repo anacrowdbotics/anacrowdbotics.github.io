@@ -420,6 +420,19 @@ section#hero-pricing {
           font-size: 72px;
           font-family: "cocoGothic-light"; } }
 
+section#hero-bwc {
+    background-color: #fca62f;
+    min-height: 700px;
+    padding-top: 130px; }
+    section#hero-bwc  .title{
+        max-width: 100%;}
+    section#hero-bwc  .separator-bwc{
+        max-width: 100%;}
+    @media (min-width: 768px) {
+        section#hero-bwc  h1{
+          font-size: 72px;
+          font-family: "cocoGothic-bold"; } }
+
 section#package-container {
   margin-top: 50px;
   margin-bottom: 50px; }
@@ -603,6 +616,17 @@ section#logopile-investors {
            margin-top: -12%;}}
     @media (max-width: 768px){
         .separator-about {
+          margin-top: -18%;}}
+.separator-bwc {
+    background-image: url(../images/web/clouds-big.png);
+    margin-top: -21%;
+    min-height: 700px;
+    background-color: transparent;}
+    @media (min-width: 768px) and (max-width: 1024px){
+        .separator-bwc {
+           margin-top: -12%;}}
+    @media (max-width: 768px){
+        .separator-bwc {
           margin-top: -18%;}}
 .separator-big-cloud {
     min-height: 750px;
