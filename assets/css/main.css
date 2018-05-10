@@ -1169,11 +1169,12 @@ footer {
     letter-spacing: -0.9px;
     text-align: left;
     color: #282828; }
+  .modal .modal-body .image {
+    max-height: 400px;
+    overflow-y: hidden; }
   .modal .modal-body img {
-    width: 568px;
-    height: 403px;
     box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.3); }
-  .modal .modal-body button {
+  .modal .modal-body .btn {
     width: 228px;
     height: 47px;
     border-radius: 38px;
