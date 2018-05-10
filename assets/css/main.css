@@ -1103,3 +1103,31 @@ footer {
       footer .footer-orange {
         background-size: 100%;
         background-position: 100% 100%; } }
+
+
+
+/* MODAL for Built with CB */
+
+.modal-content {
+  border-radius: 0px;
+  width: 1124px;
+  height: 613px;
+}
+.modal .modal-header {
+  border-bottom: none;
+}
+.modal .modal-body {
+  padding: 24px 40px 50px 40px;
+}
+.modal .modal-body img {
+  width: 568px;
+  height: 403px;
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.3);
+}
+.cutoff {
+  background: url(../images/bwc/aura.jpg);
+  background-position: top;
+  height: 403px;
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.3);
+
+}
